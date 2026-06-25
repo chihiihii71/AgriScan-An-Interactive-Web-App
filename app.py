@@ -18,10 +18,17 @@ CLASS_NAMES = [
 ]
 
 # Models available locally (GitHub)
+from huggingface_hub import hf_hub_download
+
+REPO_ID = "your-huggingface-username/agriscan-deepweeds"
+
+@st.cache_resource
+def get_model_path(filename):
+    return hf_hub_download(repo_id=REPO_ID, filename=filename)
+
 MODEL_OPTIONS = {
-    "ResNeSt50d": "models-two/resnest50d_model.pth",
-    "ECA-ResNet50d": "models-two/ecaresnet50d_model.pth",
-    # "ViT Base DINO": "https://huggingface.co/.../finetuned_vit_dino.pth"  # Add later
+    "ResNeSt50d": get_model_path("resnest50d_model.pth"),
+    "ECA-ResNet50d": get_model_path("ecaresnet50d_model.pth"),
 }
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
