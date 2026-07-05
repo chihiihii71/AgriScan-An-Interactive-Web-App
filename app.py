@@ -37,8 +37,8 @@ TEXT = {
         "prob_table": "Detailed Probabilities",
     },
     "bn": {
-        "title": "AgriScan : Interactive Web App",
-        "subtitle": "আগাছা শনাক্ত করতে একটি ছবি আপলোড করুন এবং এর প্রজাতি ও নিশ্চিততার মাত্রা দেখুন।",
+        "title": " অ্যাগ্রিস্ক্যান: ইন্টারঅ্যাকটিভ ওয়েব অ্যাপ",
+        "subtitle": "আগাছা শনাক্ত করতে একটি ছবি আপলোড করুন এবং এর প্রজাতি ও নিশ্চয়তার মাত্রা দেখুন।",
         "upload": "ছবি আপলোড করুন",
         "predicted": "শনাক্তকৃত প্রজাতি",
         "confidence": "নিশ্চয়তার মাত্রা",
@@ -62,7 +62,7 @@ lang = st.sidebar.radio(
     horizontal=True
 )
 
-lang_code = "bn" if lang == "বাংলা (Banglish)" else "en"
+lang_code = "bn" if lang == "বাংলা (Bangla)" else "en"
 T = TEXT[lang_code]
 CLASSES = CLASS_NAMES[lang_code]
 
@@ -125,7 +125,7 @@ with col2:
 
         st.markdown(f"""
             <div style="background-color:#1e4620;padding:14px;border-radius:10px;margin-bottom:12px">
-                <h3 style="color:white;margin:0">🌿 {T["predicted"]}: {label}</h3>
+                <h3 style="color:white;margin:0">{T["predicted"]}: {label}</h3>
                 <p style="color:#a7f3d0;margin:4px 0 0 0">{T["confidence"]}: {pred_prob:.2f}%</p>
             </div>
         """, unsafe_allow_html=True)
