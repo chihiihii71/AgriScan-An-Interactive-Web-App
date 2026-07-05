@@ -62,7 +62,9 @@ lang = st.sidebar.radio(
     horizontal=True
 )
 
-lang_code = "bn" if lang == "বাংলা (Bangla)" else "en"
+# Change the string here to match your option list exactly
+lang_code = "bn" if lang == "বাংলা (Banglish)" else "en" 
+
 T = TEXT[lang_code]
 CLASSES = CLASS_NAMES[lang_code]
 
