@@ -110,13 +110,7 @@ MODEL_PATH = get_model_path()
 model, device = load_model(MODEL_PATH)
 
 # -------------------------------
-# 5. Main UI Header
-# -------------------------------
-st.title(T["title"])
-st.write(T["subtitle"])
-
-# -------------------------------
-# 6. Image Transform & Prediction
+# 5. UI — Image Pre-processing
 # -------------------------------
 transform = transforms.Compose([
     transforms.Resize(256),
@@ -134,8 +128,27 @@ def predict(image: Image.Image):
         return CLASSES[pred_idx], probs.cpu().numpy()
 
 # -------------------------------
-# 7. UI — Interactive Dashboard Layout
+# 6. UI — Main Dashboard Layout
 # -------------------------------
+st.title(T["title"])
+st.write(T["subtitle"])
+
+# CSS to constrain image height to 350px (matching the chart height)
+st.markdown("""
+    <style>
+    [data-testid="stImage"] {
+        max-height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    [data-testid="stImage"] img {
+        max-height: 350px;
+        object-fit: contain;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 uploaded_file = st.file_uploader(T["upload"], type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
@@ -147,7 +160,7 @@ if uploaded_file is not None:
         df = pd.DataFrame({"Class": CLASSES, "Probability": probs * 100})
         df_sorted = df.sort_values("Probability", ascending=False).reset_index(drop=True)
 
-    # --- 1. Top Result Banner ---
+    # --- Top Result Banner ---
     st.markdown(f"""
         <div style="background-color:#1e4620;padding:20px;border-radius:10px;margin-bottom:20px;text-align:center;">
             <h2 style="color:white;margin:0">{T["predicted"]}: {label}</h2>
@@ -155,7 +168,7 @@ if uploaded_file is not None:
         </div>
     """, unsafe_allow_html=True)
 
-    # --- 2. Side-by-Side Image & Chart ---
+    # --- Side-by-Side Image & Chart ---
     col_img, col_chart = st.columns([1, 1.2])
 
     with col_img:
@@ -174,11 +187,11 @@ if uploaded_file is not None:
             showlegend=False, 
             coloraxis_showscale=False,
             margin=dict(l=0, r=0, t=10, b=0),
-            height=350
+            height=350 # Fixed height to match CSS image container
         )
         st.plotly_chart(fig, use_container_width=True)
 
-    # --- 3. Expandable Details & Download Feature ---
+    # --- Expandable Details & Download Feature ---
     with st.expander(T["prob_table"], expanded=False):
         col_table, col_btn = st.columns([3, 1])
         
