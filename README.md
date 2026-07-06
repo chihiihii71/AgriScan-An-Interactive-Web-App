@@ -1,10 +1,10 @@
 <div align="center">
 
-#  AgriScan — An Interactive Web App
+# 🌱 AgriScan — DeepWeeds Classification Engine
 
 ### Vision Transformers with Self-Supervised Pretraining vs. CNN Architectures for Precision Agriculture
 
-[![IEEE Published](https://img.shields.io/badge/IEEE-QPAIN%202026-00629B?style=for-the-badge&logo=ieee&logoColor=white)]([https://doi.org/10.1109/QPAIN69676.2026.11545838](https://ieeexplore.ieee.org/abstract/document/11545838))
+[![IEEE Published](https://img.shields.io/badge/IEEE-QPAIN%202026-00629B?style=for-the-badge&logo=ieee&logoColor=white)]((https://ieeexplore.ieee.org/abstract/document/11545838))
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://agriscan-deepweeds-deploy.streamlit.app/)
 [![Flask App](https://img.shields.io/badge/Flask-Live%20App-000000?style=for-the-badge&logo=flask&logoColor=white)](https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)
 
@@ -430,27 +430,23 @@ agriscan-deepweeds/
 ## 21. Publication
 
 ```
-K. Nahar, S. I. S. Abir, M. M. Safa, K. M. S. Kamal and A. W. Reza, "DeepWeeds: Vision Transformers for Image Classification with Self-Supervised Pretraining," 2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN), Chittagong, Bangladesh, 2026, pp. 1-6, doi: 10.1109/QPAIN69676.2026.11545838. keywords: {Modeling;Accuracy;Deep learning;Industrial plants;Plants (biology);Printing;Labeling;Measurement;Convolutional neural networks;Training;DeepWeeds;Vision Transformers;ResNeSt50d;ECAResNet50d;ViT Base Patch16 224 Dino Model;Accuracy;F1-Score;ROC curve;Grad-CAM},
-
+K. Nahar, S. I. S. Abir, M. M. Safa, K. M. S. Kamal, and A. W. Reza,
+"DeepWeeds: Vision Transformers for Image Classification with Self-Supervised Pretraining,"
+2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence,
+and Networking (QPAIN), Chittagong, Bangladesh, 2026.
+DOI: 10.1109/QPAIN69676.2026.11545838
 ```
 
 ```bibtex
-@INPROCEEDINGS{11545838,
+@inproceedings{nahar2026deepweeds,
+  title={DeepWeeds: Vision Transformers for Image Classification with Self-Supervised Pretraining},
   author={Nahar, Kamrun and Abir, Shakib Ibna Sorowar and Safa, Mahia Mehrun and Kamal, K. M. Safin and Reza, Ahmed Wasif},
-  booktitle={2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN)}, 
-  title={DeepWeeds: Vision Transformers for Image Classification with Self-Supervised Pretraining}, 
+  booktitle={2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)},
   year={2026},
-  volume={},
-  number={},
-  pages={1-6},
-  keywords={Modeling;Accuracy;Deep learning;Industrial plants;Plants (biology);Printing;Labeling;Measurement;Convolutional neural networks;Training;DeepWeeds;Vision Transformers;ResNeSt50d;ECAResNet50d;ViT Base Patch16 224 Dino Model;Accuracy;F1-Score;ROC curve;Grad-CAM},
-  doi={10.1109/QPAIN69676.2026.11545838}}
-
+  organization={IEEE},
+  doi={10.1109/QPAIN69676.2026.11545838}
 }
 ```
 
 ---
 
-<div align="center">
-<sub>East West University · Department of Computer Science and Engineering · Dhaka, Bangladesh</sub>
-</div>
