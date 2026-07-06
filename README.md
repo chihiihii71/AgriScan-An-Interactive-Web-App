@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🌱 AgriScan — DeepWeeds Classification Engine
+#  AgriScan: An Interactive Web App
 
 ### Vision Transformers with Self-Supervised Pretraining vs. CNN Architectures for Precision Agriculture
 
-[![IEEE Published](https://img.shields.io/badge/IEEE-QPAIN%202026-00629B?style=for-the-badge&logo=ieee&logoColor=white)]((https://ieeexplore.ieee.org/abstract/document/11545838))
+[![IEEE Published](https://img.shields.io/badge/IEEE%202026-00629B?style=for-the-badge&logo=ieee&logoColor=white)]((https://ieeexplore.ieee.org/abstract/document/11545838))
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://agriscan-deepweeds-deploy.streamlit.app/)
 [![Flask App](https://img.shields.io/badge/Flask-Live%20App-000000?style=for-the-badge&logo=flask&logoColor=white)](https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)
 
