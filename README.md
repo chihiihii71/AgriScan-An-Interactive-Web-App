@@ -106,13 +106,13 @@ AgriScan is available through two independent deployment platforms designed for 
 
 ---
 
-# 🏗️ Research Pipeline
+## 🏗️ System Architecture & Pipeline Overview
 
 <div align="center">
 
-![AgriScan Research Pipeline](docs/agriscan_research_pipeline.png)
+![AgriScan Research Pipeline](docs/agriscan_system_architecture_1.png)
 
-**Figure 1.** End-to-end research workflow for training, evaluating, and selecting the best-performing deep learning model.
+*Figure 1: Schematic overview of the AgriScan deep learning pipeline for DeepWeeds classification and deployment.*
 
 </div>
 
@@ -120,9 +120,16 @@ AgriScan is available through two independent deployment platforms designed for 
 
 ## Overview
 
-Figure 1 illustrates the complete research workflow followed throughout this study. The pipeline begins with the **DeepWeeds** dataset, where all images undergo a consistent augmentation process before being used to train five deep learning architectures under identical experimental settings. Each model is evaluated using the same training, validation, and testing protocol to ensure a fair comparison. Following quantitative evaluation and qualitative interpretability analysis, the highest-performing model (**ResNeSt50d**) is selected and prepared for deployment in both the Streamlit dashboard and the Flask web application.
+The complete end-to-end pipeline followed throughout this study is structured as follows:
 
-The standardized workflow ensures that performance differences arise from the model architectures themselves rather than inconsistencies in data preparation, evaluation methodology, or deployment strategy.
+* **Dataset Selection:** Utilized the **DeepWeeds** dataset as the foundation for the entire pipeline.
+* **Data Augmentation:** Applied a consistent image augmentation process across all samples to maintain data uniformity.
+* **Model Training:** Trained five distinct deep learning architectures under identical experimental settings and hyperparameter configurations.
+* **Standardized Evaluation:** Fine-tuned each model and combined quantitative evaluation with qualitative interpretability analysis to ensure a fair comparison.
+* **Model Selection:** Identified and selected **ResNeSt50d** as the highest-performing architecture.
+* **Deployment:** Integrated the finalized **ResNeSt50d** model into both a **Streamlit dashboard** and a **Flask web application** for end-user accessibility.
+
+> 💡 **Core Design Principle:** This standardized workflow ensures that all performance variations arise strictly from structural differences within the model architectures themselves, eliminating any potential bias or inconsistency from data preparation, evaluation methodology, or deployment strategies.
 
 ---
 
@@ -146,7 +153,7 @@ The models developed in this project were trained and evaluated using the **Deep
 
 ---
 
-## Weed Categories
+## Deepweeds Categories
 
 The dataset consists of eight invasive weed species together with one **Negative** class. Including a background class enables the model to distinguish target weeds from ordinary vegetation, soil, and other non-target objects, reducing false-positive predictions during real-world deployment.
 
@@ -198,13 +205,10 @@ To ensure a scientifically valid comparison between all five architectures, ever
 | **Evaluation Metrics** | Accuracy, Precision, Recall, F1-score |
 | **Visual Evaluation** | Confusion Matrix, ROC Curve, Accuracy/Loss Curves, Grad-CAM |
 
-This controlled evaluation framework ensures that differences in performance are attributable to the learning capability of each architecture rather than inconsistencies in data preparation or evaluation methodology.
 
 ---
 
 ## Dataset Citation
-
-If you use the DeepWeeds dataset in your own work, please cite the original publication.
 
 ### IEEE Citation
 
