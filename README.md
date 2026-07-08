@@ -39,18 +39,19 @@ AgriScan is available through two independent deployment platforms designed for 
 
 # 🌱 Project Overview
 
-Accurate weed identification is a critical component of precision agriculture. Misidentifying invasive weeds can lead to crop damage, unnecessary herbicide application, increased production costs, and reduced agricultural yield. Traditional identification methods rely heavily on botanical expertise and manual field inspection, making them impractical for many farmers and agricultural practitioners.
+- **The problem:** Deepweeds misidentification is a real cost in agriculture; it leads to crop damage, wasted herbicide, higher production costs, and lower yields. Traditional identification depends on botanical expertise and manual field inspection, which doesn't scale well for most farmers and practitioners.
 
-**AgriScan** was developed to investigate whether modern deep learning architectures can improve automated weed classification while remaining practical for real-world deployment. Rather than evaluating a single model, this project presents a controlled comparative study between four convolutional neural network (CNN) architectures and a Vision Transformer (ViT) pretrained using DINO self-supervised learning.
+- **The approach:** AgriScan runs a proper comparative evaluation of four CNN architectures against a Vision Transformer pretrained with DINO self-supervised learning, all trained and tested under identical conditions on the DeepWeeds dataset for a fair, apples-to-apples comparison.
 
-All models were trained and evaluated using identical experimental conditions on the **DeepWeeds** dataset to ensure a fair comparison. Performance was assessed using multiple evaluation metrics, including accuracy, precision, recall, F1-score, ROC analysis, confusion matrices, and Grad-CAM visualizations.
+- **How performance was judged:** The evaluation goes beyond a single accuracy number, covering precision, recall, F1-score, ROC analysis, confusion matrices, and Grad-CAM visualizations to understand not just how well each model performs, but how and why.
 
-The highest-performing architecture, **ResNeSt50d**, achieved **98.23% classification accuracy** and was subsequently deployed through two complementary web applications:
+- **The winner:** ResNeSt50d came out on top with 98.23% classification accuracy.
 
-- **Streamlit Dashboard** — designed for researchers, students, and agricultural analysts.
-- **Flask Web Application** — designed for farmers and field workers with support for live smartphone camera capture.
+- **From research to real-world tool:** The best model was deployed as two complementary applications suited to different users:
+   - A Streamlit dashboard for researchers and analysts who want to explore the data and results in depth.
+   - A Flask web app built for farmers and field workers, complete with live camera capture for on-the-spot identification.
 
-Together, these components demonstrate how a research-oriented machine learning pipeline can be transformed into an accessible, production-ready decision support system for precision agriculture.
+- **The bigger picture:** AgriScan shows what it looks like to carry a deep learning pipeline all the way from research comparison to an accessible, production-ready decision support system of end-to-end thinking precision agriculture actually needs.
 
 ---
 
@@ -66,9 +67,8 @@ Together, these components demonstrate how a research-oriented machine learning 
 
 ---
 
-### 🌾 Weed Classification
+### 🌾 Deepweeds Classification
 
-- Classification of **nine DeepWeeds categories**.
 - Detection of **eight invasive weed species** and one **Negative (background)** class.
 - Designed for realistic field environments with varying lighting and background conditions.
 - Supports automated weed identification for precision agriculture applications.
@@ -78,7 +78,7 @@ Together, these components demonstrate how a research-oriented machine learning 
 ### 💻 Interactive Applications
 
 - Research-oriented **Streamlit dashboard**.
-- Mobile-friendly **Flask web application**.
+- Mobile-friendly **Streamlit dashboard** & **Flask web application**.
 - Browser-based **live camera capture**.
 - Standard image upload.
 - Interactive probability visualization.
