@@ -12,10 +12,10 @@
 [![IEEE](https://img.shields.io/badge/IEEE-QPAIN%202026-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11545838)
 [![Web Dashboard](https://img.shields.io/badge/Web%20Dashboard-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://agriscan-deepweeds-deploy.streamlit.app/)
 [![Web Application](https://img.shields.io/badge/Web%20Application-Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)
+[![Model Hosting](https://img.shields.io/badge/Model%20Hosting-Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](Jaoooooo9/agriscan-interactive-web-app-flask-edition)
 
 </div>
 
-</div>
 
 ---
 # 📄 Publication
@@ -57,7 +57,7 @@ The research presented in this repository has been published in an IEEE internat
 
 <div align="center">
 
-[![AgriScan Interface](docs/agriscan_interface.png)](https://agriscan-deepweeds-deploy.streamlit.app/)
+[![AgriScan Interface](docs/agriscan_interface.png)](https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)
 
 </div>
 
