@@ -2,9 +2,9 @@
 
 # AgriScan: An Interactive Web Application
 
-### Vision Transformers with Self-Supervised Pretraining vs. CNN Architectures for Precision Agriculture
+### DeepWeeds: Vision Transformers for Image Classification with Self-Supervised Pretraining
 
-*A research-driven deep learning system for automated invasive weed classification using comparative CNN and Vision Transformer architectures.*
+*A research-driven deep learning system for automated invasive weed classification using comparative CNNs and a Vision Transformer with SSL architectures.*
 
 
 <div align="center">
