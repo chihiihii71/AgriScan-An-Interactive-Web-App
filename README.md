@@ -695,37 +695,6 @@ If you use this repository, the trained models, or the accompanying methodology 
 | **Ahmed Wasif Reza** | Research supervision, project oversight. |
 ---
 
-# 🙏 Acknowledgements
-
-This project would not have been possible without the contributions of the following open-source communities and research initiatives.
-
-### Dataset
-
-- DeepWeeds Dataset
-
-### Deep Learning
-
-- PyTorch
-- TIMM (PyTorch Image Models)
-
-### Model Hosting
-
-- Hugging Face Hub
-
-### Web Frameworks
-
-- Streamlit
-- Flask
-
-### Scientific Computing
-
-- NumPy
-- Pandas
-- Scikit-learn
-- Plotly
-- Pillow
-
-The authors also acknowledge the original DeepWeeds dataset creators and the maintainers of the open-source software used throughout this research.
 
 ---
 
@@ -736,6 +705,8 @@ The authors also acknowledge the original DeepWeeds dataset creators and the mai
 If you found AgriScan useful for your research, coursework, or agricultural applications, please consider giving this repository a **⭐ Star** on GitHub.
 
 Your support helps improve the visibility of open-source research and encourages future development.
+
+</div>
 
 ---
 
