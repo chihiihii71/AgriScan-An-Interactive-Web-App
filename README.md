@@ -10,7 +10,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-Web%20Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://agriscan-deepweeds-deploy.streamlit.app/)
 [![Flask](https://img.shields.io/badge/Flask-Web%20Application-000000?style=for-the-badge&logo=flask&logoColor=white)](https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Model%20Hosting-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](Jaoooooo9/agriscan-interactive-web-app-flask-edition)
-[![IEEE](https://img.shields.io/badge/Flask-Web%20Application-000000?style=for-the-badge&logo=flask&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11545838)
+[![IEEE](https://img.shields.io/badge/IEEE-QPAIN%202026-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11545838)
 
 </div>
 
@@ -47,7 +47,7 @@ AgriScan is available through two independent deployment platforms designed for 
 | Application | Purpose | Link |
 |-------------|---------|------|
 | 🎛️ **Streamlit Dashboard** | Research dashboard with bilingual interface, probability visualization, and CSV export | **Open Streamlit App** |
-| 📱 **Flask Web Application** | Mobile-friendly field application with live camera capture | **Open Flask App (https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)** |
+| 📱 **Flask Web Application** | Web & Mobile-friendly field application with live camera capture | **Open Flask App (https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)** |
 | 📄 **IEEE Publication** | Published conference paper describing the comparative study | **DOI: 10.1109/QPAIN69676.2026.11545838 ([https://ieeexplore.ieee.org/abstract/document/11545838))](https://doi.org/10.1109/QPAIN69676.2026.11545838)** |
 
 
@@ -55,7 +55,7 @@ AgriScan is available through two independent deployment platforms designed for 
 
 <div align="center">
 
-[![AgriScan Interface](docs/BourneIt.png)](https://bourneit-health-triage-engine.vercel.app/)
+[![AgriScan Interface](docs/agriscan_interface.png)]([https://bourneit-health-triage-engine.vercel.app/](https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition))
 
 </div>
 
