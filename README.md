@@ -6,14 +6,37 @@
 
 *A research-driven deep learning system for automated invasive weed classification using comparative CNN and Vision Transformer architectures.*
 
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
-[![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)]()
+
 [![Streamlit](https://img.shields.io/badge/Streamlit-Web%20Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://agriscan-deepweeds-deploy.streamlit.app/)
 [![Flask](https://img.shields.io/badge/Flask-Web%20Application-000000?style=for-the-badge&logo=flask&logoColor=white)](https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Model%20Hosting-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](Jaoooooo9/agriscan-interactive-web-app-flask-edition)
-[![IEEE](https://img.shields.io/badge/Flask-Web%20Application-000000?style=for-the-badge&logo=flask&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11545838))
+[![IEEE](https://img.shields.io/badge/Flask-Web%20Application-000000?style=for-the-badge&logo=flask&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11545838)
 
 </div>
+
+---
+# 📄 Publication
+
+The research presented in this repository has been published in an IEEE international conference, 2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN), 16-18 April 2026.
+
+**DOI**
+
+```text
+10.1109/QPAIN69676.2026.11545838
+```
+
+---
+
+# 🏅 Recognition
+
+**IEEE QPAIN 2026 — Paper Presentation Certificate**
+
+<div align="center">
+
+![IEEE Certificate](docs/paper_certificate.png)
+
+</div>
+
 
 ---
 
@@ -27,11 +50,12 @@ AgriScan is available through two independent deployment platforms designed for 
 | 📱 **Flask Web Application** | Mobile-friendly field application with live camera capture | **Open Flask App (https://huggingface.co/spaces/Jaoooooo9/agriscan-interactive-web-app-flask-edition)** |
 | 📄 **IEEE Publication** | Published conference paper describing the comparative study | **DOI: 10.1109/QPAIN69676.2026.11545838 ([https://ieeexplore.ieee.org/abstract/document/11545838))](https://doi.org/10.1109/QPAIN69676.2026.11545838)** |
 
-<div align="center">
 
 ### 🚀 Try the Live Classifier
 
-*(Insert your existing "Try AgriScan Now" badge here.)*
+<div align="center">
+
+[![AgriScan Interface](docs/BourneIt.png)](https://bourneit-health-triage-engine.vercel.app/)
 
 </div>
 
@@ -51,7 +75,6 @@ AgriScan is available through two independent deployment platforms designed for 
    - A Streamlit dashboard for researchers and analysts who want to explore the data and results in depth.
    - A Flask web app built for farmers and field workers, complete with live camera capture for on-the-spot identification.
 
-- **The bigger picture:** AgriScan shows what it looks like to carry a deep learning pipeline all the way from research comparison to an accessible, production-ready decision support system of end-to-end thinking precision agriculture actually needs.
 
 ---
 
@@ -129,13 +152,31 @@ The complete end-to-end pipeline followed throughout this study is structured as
 * **Model Selection:** Identified and selected **ResNeSt50d** as the highest-performing architecture.
 * **Deployment:** Integrated the finalized **ResNeSt50d** model into both a **Streamlit dashboard** and a **Flask web application** for end-user accessibility.
 
-> 💡 **Core Design Principle:** This standardized workflow ensures that all performance variations arise strictly from structural differences within the model architectures themselves, eliminating any potential bias or inconsistency from data preparation, evaluation methodology, or deployment strategies.
 
 ---
 
 # 🌾 Dataset
+## Dataset Citation
 
-The models developed in this project were trained and evaluated using the **DeepWeeds** dataset, a widely recognized benchmark for invasive weed classification. Unlike laboratory-controlled datasets, DeepWeeds contains real field photographs captured under varying environmental conditions, allowing the models to learn robust visual representations that generalize more effectively to practical agricultural scenarios.
+### IEEE Citation
+
+> A. Olsen, D. A. Konovalov, B. Philippa, P. Ridd, J. C. Wood, J. Johns, W. Banks, B. Girgenti, O. Kenny, J. Whinney, B. Calvert, M. Rahimi Azghadi, and R. D. White, "DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning," *Scientific Reports*, vol. 9, no. 2058, 2019.
+
+### BibTeX
+
+```bibtex
+@article{DeepWeeds2019,
+  author = {Alex Olsen and Dmitry A. Konovalov and Bronson Philippa and Peter Ridd and Jake C. Wood and Jamie Johns and Wesley Banks and Benjamin Girgenti and Owen Kenny and James Whinney and Brendan Calvert and Mostafa {Rahimi Azghadi} and Ronald D. White},
+  title = {DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning},
+  journal = {Scientific Reports},
+  volume = {9},
+  number = {2058},
+  year = {2019},
+  doi = {10.1038/s41598-018-38343-3}
+}
+```
+
+The models developed in this project were trained and evaluated using the **DeepWeeds** dataset, a widely recognized benchmark for invasive weed classification. DeepWeeds contains real field photographs captured under varying environmental conditions, allowing the models to learn robust visual representations that generalize more effectively to practical agricultural scenarios.
 
 ---
 
@@ -193,50 +234,11 @@ Before model training, all images were processed using a consistent preprocessin
 
 ## Experimental Protocol
 
-To ensure a scientifically valid comparison between all five architectures, every model followed the same experimental procedure.
 
-| Component | Configuration |
-|-----------|---------------|
-| **Dataset** | DeepWeeds |
-| **Training Images** | Same dataset for every model |
-| **Validation Strategy** | Independent validation split |
-| **Testing Strategy** | Independent unseen test split |
-| **Data Leakage** | Zero image overlap between splits |
-| **Evaluation Metrics** | Accuracy, Precision, Recall, F1-score |
-| **Visual Evaluation** | Confusion Matrix, ROC Curve, Accuracy/Loss Curves, Grad-CAM |
 
 
 ---
 
-## Dataset Citation
-
-### IEEE Citation
-
-> A. Olsen, D. A. Konovalov, B. Philippa, P. Ridd, J. C. Wood, J. Johns, W. Banks, B. Girgenti, O. Kenny, J. Whinney, B. Calvert, M. Rahimi Azghadi, and R. D. White, "DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning," *Scientific Reports*, vol. 9, no. 2058, 2019.
-
-### BibTeX
-
-```bibtex
-@article{DeepWeeds2019,
-  author = {Alex Olsen and Dmitry A. Konovalov and Bronson Philippa and Peter Ridd and Jake C. Wood and Jamie Johns and Wesley Banks and Benjamin Girgenti and Owen Kenny and James Whinney and Brendan Calvert and Mostafa {Rahimi Azghadi} and Ronald D. White},
-  title = {DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning},
-  journal = {Scientific Reports},
-  volume = {9},
-  number = {2058},
-  year = {2019},
-  doi = {10.1038/s41598-018-38343-3}
-}
-```
-
----
-
-# 📈 Experimental Evaluation
-
-Following the research pipeline described in Figure 1, all five architectures were trained and evaluated using the same dataset, preprocessing pipeline, train/validation/test splits, and evaluation metrics. This standardized experimental design ensures that the reported performance differences are attributable to the model architectures rather than inconsistencies in data preparation or evaluation methodology.
-
-Model performance was assessed using both **quantitative metrics** and **qualitative visual analysis**, providing a comprehensive comparison of classification accuracy, generalization capability, and interpretability.
-
----
 
 ## 📊 Evaluation Metrics
 
@@ -265,26 +267,67 @@ The table below summarizes the overall performance achieved by each architecture
 | ResNet50 + CBAM | CNN (Attention Module) | 87.00% | 80.0% | 90.0% | 84.0% |
 
 ---
-
-# 📖 Performance Analysis
-
-The comparative study demonstrates that **ResNeSt50d** consistently achieved the strongest overall performance across all evaluation metrics, reaching **98.23% classification accuracy** while maintaining balanced precision, recall, and macro F1-score. Its split-attention mechanism enabled the network to capture fine-grained discriminative features that effectively distinguish visually similar invasive weed species under real-world field conditions.
-
-Among the transformer-based architectures, the **ViT Base Patch16 224 DINO** model achieved the highest performance. The results indicate that self-supervised pretraining provides a measurable advantage over transformer models trained without self-supervised initialization, allowing the Vision Transformer to outperform the CNN–Transformer hybrid architecture evaluated in this study.
-
-Although the Vision Transformer demonstrated competitive performance, the experimental results suggest that convolutional architectures remain better suited to the DeepWeeds dataset. CNNs incorporate spatial inductive biases directly into their architecture, enabling efficient feature learning from moderate-sized datasets. Vision Transformers, in contrast, generally benefit from substantially larger training datasets before consistently surpassing convolutional models.
-
-Rather than demonstrating a limitation of self-supervised learning, these findings highlight the effectiveness of DINO pretraining in improving transformer performance while also illustrating that dataset scale remains an important factor influencing the relative performance of CNN and Vision Transformer architectures for agricultural image classification.
-
 ---
 
-## 🔑 Key Findings
+# 🧬 Detailed Model Configuration
 
-- ResNeSt50d achieved the highest overall classification accuracy (**98.23%**).
-- Split-attention CNNs remained the most effective architecture for the DeepWeeds dataset.
-- DINO self-supervised pretraining improved Vision Transformer performance compared with the CNN–Transformer hybrid.
-- All models were evaluated under identical experimental conditions to ensure a fair comparison.
-- Grad-CAM visualizations confirmed that the highest-performing models focused primarily on biologically meaningful plant structures.
+The table below documents the complete training configuration for each architecture, ensuring full reproducibility of the comparative study.
+
+| Property | ResNeSt50d | ECAResNet50d | ResNet50 + CBAM | ResNet50ViT | ViT-B/16 (DINO) |
+|:---|:---|:---|:---|:---|:---|
+| **Framework** | PyTorch + TIMM | PyTorch + TIMM | TensorFlow / Keras | TensorFlow / Keras | PyTorch + TIMM + Hugging Face |
+| **Training Platform** | Kaggle Notebook | Kaggle Notebook | Kaggle Notebook | Kaggle Notebook | Kaggle Notebook |
+| **Hardware** | NVIDIA Tesla P100 GPU | NVIDIA Tesla P100 GPU | NVIDIA Tesla P100 GPU | NVIDIA Tesla P100 GPU | NVIDIA Tesla P100 GPU |
+| **CUDA Acceleration** | Yes | Yes | Yes | Yes | Yes |
+| **Backbone** | ResNeSt50d | ECAResNet50d | ResNet50 | ResNet50 | ViT-Base Patch16/224 |
+| **Attention Mechanism** | Split-Attention | Efficient Channel Attention (ECA) | CBAM (Channel + Spatial) | Transformer Encoder | Multi-Head Self-Attention |
+| **Transformer Depth** | — | — | — | 2 Encoder Blocks | 12 Encoder Blocks |
+| **Attention Heads** | — | — | — | 4 | 12 |
+| **Embedding Dimension** | — | — | — | 256 | 768 |
+| **MLP Dimension** | — | — | — | 512 | 3072 |
+| **Positional Encoding** | — | — | — | Learnable Positional Embedding | Learnable Positional Embedding |
+| **Pooling Strategy** | Global Average Pooling | Global Average Pooling | Global Average Pooling | Global Average Token Pooling | [CLS] Token |
+| **Pretraining** | ImageNet | ImageNet | ImageNet | ImageNet | DINO Self-Supervised Pretraining |
+| **Transfer Learning Strategy** | End-to-End Fine-tuning | End-to-End Fine-tuning | Freeze Backbone → Unfreeze Last 20 Layers | Freeze Backbone → Unfreeze Last 20 Layers | Full Fine-tuning after Self-Supervised Pretraining |
+| **Input Resolution** | 224 × 224 | 224 × 224 | 224 × 224 | 224 × 224 | 224 × 224 |
+| **Batch Size** | 32 | 32 | 32 | 32 | 32 (Fine-tuning), 16 (Pretraining, Effective 32 via Gradient Accumulation) |
+| **Epochs** | 50 | 50 | 50 | 55 | 110 (Pretraining) + 50 (Fine-tuning) |
+| **Optimizer** | AdamW | AdamW | Adam | Adam | AdamW |
+| **Learning Rate** | 1×10⁻⁴ | 1×10⁻⁴ | 5×10⁻⁴ → 1×10⁻⁴ | 5×10⁻⁴ → 1×10⁻⁴ | 1×10⁻² (Pretraining), 1×10⁻⁵ (Fine-tuning) |
+| **Weight Decay** | 0.01 | 0.01 | None | None | 0.05 |
+| **Scheduler** | Cosine Annealing LR | Cosine Annealing LR | None | None | Cosine Annealing LR |
+| **Loss Function** | CrossEntropyLoss | CrossEntropyLoss | Categorical Crossentropy | Categorical Crossentropy | CrossEntropyLoss |
+| **Class Weighting** | None | None | Yes | None | None |
+| **Classifier Head** | TIMM Linear Head | TIMM Linear Head | Dense(1024) → Dense(512) + Dropout | Dense(1024) → Dense(512) + Dropout | Linear Classification Head |
+| **Dropout** | None | None | 0.30 | 0.30 | None |
+| **Mixed Precision** | CUDA AMP | CUDA AMP | No | No | CUDA AMP |
+| **Gradient Accumulation** | No | No | No | No | Yes (Pretraining Only) |
+| **Early Stopping** | Patience = 5 | Patience = 5 | None | None | Patience = 10 |
+| **Data Augmentation** | RandomResizedCrop, H-Flip, TrivialAugmentWide | RandomResizedCrop, H-Flip, TrivialAugmentWide | ImageDataGenerator Augmentation | ImageDataGenerator Augmentation | Multi-Crop, CLAHE, RandomResizedCrop, H-Flip, ColorJitter, Gaussian Blur, Random Grayscale |
+| **Normalization** | ImageNet Mean & Std | ImageNet Mean & Std | ImageNet Mean & Std | ImageNet Mean & Std | ImageNet Mean & Std |
+
+### Experimental Environment
+
+```
+Platform          : Kaggle Notebook
+GPU               : NVIDIA Tesla P100 (16 GB)
+Frameworks        : PyTorch 2.x, TIMM, Hugging Face Transformers, TensorFlow/Keras
+CUDA              : Enabled
+Mixed Precision   : CUDA AMP (PyTorch models only)
+Operating System  : Windows-10 (Kaggle Runtime)
+```
+---
+
+## 📖 Performance Analysis & Key Findings
+
+* **ResNeSt50d Performance:** Achieved **98.23% classification accuracy** while maintaining balanced precision, recall, and macro F1-score.
+* **Feature Extraction:** The split-attention mechanism successfully captures fine-grained features to distinguish visually similar weed species in real-world conditions.
+* **Transformer Results:** **ViT Base Patch16 224 DINO** reached **94.00%**, outperforming the CNN-Transformer hybrid (`ResNet50ViT`).
+* **Pretraining Advantage:** DINO self-supervised pretraining provides a measurable performance boost over models initialized without it.
+* **Architectural Suitability:** CNNs remain better suited for the moderate-sized DeepWeeds dataset due to their inherent spatial inductive biases.
+* **Dataset Scale Limitations:** Vision Transformers require substantially larger training datasets before consistently surpassing advanced convolutional models.
+* **Experimental Rigor:** All models were evaluated under identical conditions to ensure a fair and unbiased comparison.
+* **Model Interpretability:** Grad-CAM visualizations confirmed that the models focused accurately on biologically meaningful plant structures rather than background noise.
 
 ---
 
@@ -346,27 +389,6 @@ The Streamlit application is intended for researchers, students, agricultural an
 - Responsive dashboard layout
 - Automatic model loading from Hugging Face Hub
 
-### Typical Workflow
-
-```text
-Upload Image
-      │
-      ▼
-Image Preprocessing
-      │
-      ▼
-ResNeSt50d Inference
-      │
-      ▼
-Probability Prediction
-      │
-      ▼
-Interactive Dashboard
-      │
-      ▼
-CSV Report Export
-```
-
 ---
 
 ## 📱 Flask Web Application
@@ -383,29 +405,9 @@ The Flask application is designed primarily for practical field use, enabling us
 - Bilingual interface (English / Bangla)
 - Automatic model loading from Hugging Face Hub
 
-### Typical Workflow
-
-```text
-Camera Capture
-     or
-Image Upload
-      │
-      ▼
-Image Preprocessing
-      │
-      ▼
-ResNeSt50d Inference
-      │
-      ▼
-Probability Prediction
-      │
-      ▼
-Prediction Results
-```
-
 ---
 
-# ⚙️ Shared AI Inference Engine
+# ⚙️ Shared AI Inference Engine On The Dashboards
 
 Both deployed applications rely on the same production inference pipeline to ensure identical prediction behaviour across platforms.
 
@@ -445,15 +447,54 @@ Streamlit UI      Flask UI
 ```
 
 ---
+# 🌍 Real-World Applications
 
-# 🌍 Deployment Highlights
+Although AgriScan was developed as a comparative deep learning research project, its architecture and deployment strategy make it suitable for practical agricultural applications. By combining high-accuracy image classification with accessible web interfaces, the system demonstrates how modern artificial intelligence can assist farmers, researchers, and agricultural organizations in improving weed management and decision-making.
 
-- Single production model shared across both applications.
-- Consistent prediction pipeline across deployment platforms.
-- Automatic model retrieval from Hugging Face Hub.
-- Cross-platform accessibility for desktop and mobile devices.
-- Bilingual user interface for improved accessibility.
-- Modular architecture that supports future deployment targets such as mobile applications, edge devices, or cloud-based APIs.
+Potential application areas include:
+
+- Precision agriculture and smart farming
+- Early detection of invasive weed species
+- Crop monitoring and field inspection
+- Mobile-assisted weed identification
+- Future drone-based agricultural monitoring
+- Agricultural AI research and education
+- Teaching computer vision and deep learning concepts
+- Environmental and ecological monitoring
+
+---
+
+
+# 🚀 Future Work
+
+Several extensions can further improve the capabilities of AgriScan.
+
+### Model Improvements
+
+- Train on larger and more diverse agricultural datasets.
+- Investigate newer Vision Transformer architectures.
+- Explore ensemble learning between CNN and Transformer models.
+- Apply model compression and quantization for faster inference.
+
+---
+
+### Application Improvements
+
+- Native Android and iOS applications.
+- Offline inference for remote agricultural environments.
+- Cloud-based REST API for third-party integration.
+- Multi-image batch prediction.
+- User account management and prediction history.
+
+---
+
+### Research Directions
+
+- Weed detection using object detection frameworks.
+- Semantic segmentation for dense weed localization.
+- Multi-label agricultural disease classification.
+- Drone and UAV image analysis.
+- Continual learning for newly emerging weed species.
 
 ---
 
@@ -461,22 +502,6 @@ Streamlit UI      Flask UI
 
 AgriScan combines modern deep learning frameworks, web technologies, and cloud deployment platforms to provide an end-to-end research and deployment pipeline.
 
----
-
-## 🧠 Research & Model Development
-
-| Category | Technology |
-|----------|------------|
-| **Programming Language** | Python |
-| **Deep Learning Framework** | PyTorch |
-| **Model Library** | TIMM (PyTorch Image Models) |
-| **CNN Architectures** | ResNeSt50d, ECAResNet50d, ResNet50 + CBAM |
-| **Vision Transformer** | ViT Base Patch16 224 DINO |
-| **Hybrid Architecture** | ResNet50ViT |
-| **Dataset** | DeepWeeds |
-| **Interpretability** | Grad-CAM |
-| **Evaluation** | Scikit-learn |
-| **Experiment Environment** | Jupyter Notebook |
 
 ---
 
@@ -484,6 +509,7 @@ AgriScan combines modern deep learning frameworks, web technologies, and cloud d
 
 | Category | Technology |
 |----------|------------|
+| **Programming Language** | Python, CSS |
 | **Framework** | Streamlit |
 | **Inference Engine** | PyTorch |
 | **Model Library** | TIMM |
@@ -500,6 +526,7 @@ AgriScan combines modern deep learning frameworks, web technologies, and cloud d
 
 | Category | Technology |
 |----------|------------|
+| **Programming Language** | Python, HTML, CSS |
 | **Framework** | Flask |
 | **Inference Engine** | PyTorch |
 | **Model Library** | TIMM |
@@ -522,6 +549,7 @@ AgriScan combines modern deep learning frameworks, web technologies, and cloud d
 | **GitHub** | Source code management |
 
 ---
+
 
 # ⚡ Installation
 
@@ -603,13 +631,6 @@ streamlit run app.py
 python app.py
 ```
 
----
-
-## Automatic Model Loading
-
-Both applications automatically download the trained **ResNeSt50d** model from **Hugging Face Hub** during startup.
-
-No manual download of model weights is required.
 
 ---
 
@@ -646,121 +667,7 @@ agriscan-deepweeds/
 ├── README.md
 │
 ├── requirements.txt
-│
-└── LICENSE
 ```
-
----
-
-## 📁 Repository Organization
-
-| Directory | Purpose |
-|-----------|---------|
-| **streamlit_app/** | Research-oriented Streamlit dashboard |
-| **flask_app/** | Mobile-friendly Flask web application |
-| **research/** | Model training, evaluation, and Grad-CAM notebooks |
-| **docs/** | Architecture diagrams, screenshots, and documentation assets |
-| **README.md** | Project documentation |
-| **requirements.txt** | Python package dependencies |
-
----
-
-## 💡 Development Workflow
-
-The repository follows a modular workflow that separates research from deployment.
-
-```text
-Research
-     │
-     ▼
-Model Training
-     │
-     ▼
-Model Evaluation
-     │
-     ▼
-Best Model Selection
-     │
-     ▼
-Model Upload
-(Hugging Face Hub)
-     │
-     ▼
-Deployment
-     │
- ┌───┴────────────┐
- ▼                ▼
-
-Streamlit      Flask
-Dashboard      Web App
-```
-
-This modular organization allows future model improvements to be deployed simply by replacing the production model stored on Hugging Face Hub, without requiring significant modifications to either application.
-
----
-
-# 🌍 Real-World Applications
-
-Although AgriScan was developed as a comparative deep learning research project, its architecture and deployment strategy make it suitable for practical agricultural applications. By combining high-accuracy image classification with accessible web interfaces, the system demonstrates how modern artificial intelligence can assist farmers, researchers, and agricultural organizations in improving weed management and decision-making.
-
-Potential application areas include:
-
-- 🌱 Precision agriculture and smart farming
-- 🚜 Early detection of invasive weed species
-- 🌾 Crop monitoring and field inspection
-- 📷 Mobile-assisted weed identification
-- 🛰️ Future drone-based agricultural monitoring
-- 🧪 Agricultural AI research and education
-- 🏫 Teaching computer vision and deep learning concepts
-- 🌍 Environmental and ecological monitoring
-
----
-
-# ⚠️ Current Limitations
-
-While AgriScan demonstrates strong classification performance, several limitations should be considered when interpreting the results.
-
-- The model is trained exclusively on the **DeepWeeds** dataset.
-- Only **nine image classes** are currently supported.
-- Performance may decrease for severely blurred or low-resolution images.
-- Weed species outside the DeepWeeds taxonomy cannot be recognized.
-- The deployed model performs image classification rather than object detection or segmentation.
-- Browser camera functionality depends on device compatibility and user permission.
-
-These limitations provide opportunities for future improvements and broader real-world deployment.
-
----
-
-# 🚀 Future Work
-
-Several extensions can further improve the capabilities of AgriScan.
-
-### Model Improvements
-
-- Train on larger and more diverse agricultural datasets.
-- Investigate newer Vision Transformer architectures.
-- Explore ensemble learning between CNN and Transformer models.
-- Apply model compression and quantization for faster inference.
-
----
-
-### Application Improvements
-
-- Native Android and iOS applications.
-- Offline inference for remote agricultural environments.
-- Cloud-based REST API for third-party integration.
-- Multi-image batch prediction.
-- User account management and prediction history.
-
----
-
-### Research Directions
-
-- Weed detection using object detection frameworks.
-- Semantic segmentation for dense weed localization.
-- Multi-label agricultural disease classification.
-- Drone and UAV image analysis.
-- Continual learning for newly emerging weed species.
 
 ---
 
@@ -855,5 +762,3 @@ Your support helps improve the visibility of open-source research and encourages
 **Built with ❤️ using PyTorch, TIMM, Streamlit, Flask, and Hugging Face.**
 
 </div>
-
-
