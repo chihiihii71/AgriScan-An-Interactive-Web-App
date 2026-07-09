@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌿 AgriScan: An Interactive Web Application
+# AgriScan: An Interactive Web Application
 
 ### Vision Transformers with Self-Supervised Pretraining vs. CNN Architectures for Precision Agriculture
 
